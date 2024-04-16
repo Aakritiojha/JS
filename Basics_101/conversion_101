@@ -2,18 +2,17 @@ let score = 33
 let scores = "33a"
 
 console.log(typeof (score));
-console.log(typeof (scores));
+console.log(typeof (scores));   correct
 
 let scoreInNum = Number(score)
 let scoresInNum = Number(scores)
 
-console.log(typeof (scoreInNum));
-console.log(typeof (scoresInNum));
+console.log(typeof (scoreInNum));    correct
+console.log(typeof (scoresInNum));   correct
 
-console.log(scores);
+console.log(scores);     CORRECT
 
-console.log(scoresInNum); //NaN -> Not a Number, but you have defined it as Number(), data type will be "Number" but when you print that we know that we have entered a string so the computers says it's NaN instead of giving the actual string value
-
+console.log(scoresInNum); //NaN -> Not a Number, but you have defined it as Number(), data type will be "Number" but when you print that we know that we have entered a string so the computers says it's NaN instead of giving the actual string value correct
 
 //WHEN CONVERSING TO NUMBER FOLLWING HAPPENS
 // "33" -> 33
@@ -31,4 +30,5 @@ console.log(booleanIsLoggedIn); //true
 // 1 -> true
 // "" -> false
 // name -> true
+
 
