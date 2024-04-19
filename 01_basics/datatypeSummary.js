@@ -41,7 +41,7 @@ const goals = ["personal", "financial", "spiritual"];
 //array denied by []
 
 const myObj = {
-    name: shanaya
+    name: "shanaya",
     age: 18
 }
 //object defined by {}
@@ -54,8 +54,44 @@ const myFunc = function(){
 
 //FINALLY
 //to find data type of any data we can use "typeof" fucntion
-nction
+
 
 
 console.log(typeof score);
+
+
+//+++++++++++++++++++++++++++++++
+//STACK AND HEAP MEMORY
+
+//STACK is used on primitive data types, which when called, made cahnges to, the changes are made on the copy and not actual.
+
+let user1Name = "Shanaya"
+let user2Name = user1Name
+user2Name = "Anannya"
+
+console.log(user2Name);
+//results in Anannya
+
+console.log(user1Name);
+//results in Shanaya
+//as the change was made in the copy of user1Name, original user1Name is the same
+
+
+//HEAP is used on non primitive daya types, which when called, made changes to, the changes are made on the actual reference, no copy is made
+//basically it provides reference to the actual data and not copy
+
+let user1info = {
+    email: "hello@google.com",
+    number: 787888
+
+}
+console.log(user1info);
+
+
+let user2info = user1info
+
+user2info.email = "hi@google.com"
+
+console.log(user1info);
+//the email of user1info has been changed to hi@google.com as the changes were made by referencing to the actual data
 
